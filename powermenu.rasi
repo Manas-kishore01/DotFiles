@@ -1,0 +1,78 @@
+* {
+    font: "JetBrains Mono 12";
+    text-color: #C8C5BE;           /* Ayu light text */
+    background-color: #0F1419;     /* Ayu dark background */
+    border-color: #2D3440;         /* Ayu dark border */
+
+    selected-normal-foreground: #0F1419; /* Background color on selection */
+    selected-normal-background: #FFB454; /* Ayu orange highlight */
+}
+
+window {
+    location: center;
+    anchor: center;
+    fullscreen: false;
+    width: 30%;
+    padding: 10px;
+    border: 2px;
+    border-color: @border-color;
+    background-color: @background-color;
+}
+
+mainbox {
+    children: [inputbar, listview];
+    spacing: 10px;
+    background-color: inherit;
+}
+
+inputbar {
+    padding: 5px;
+    children: [prompt, textbox-prompt-colon, entry];
+    background-color: @background-color;
+    text-color: @text-color;
+    border: 1px;
+    border-color: @border-color;
+}
+
+prompt {
+    text-color: @text-color;
+}
+
+textbox-prompt-colon {
+    text-color: @text-color;
+}
+
+entry {
+    text-color: @text-color;
+    background-color: @background-color;
+}
+
+listview {
+    lines: 6;
+    fixed-height: false;
+    spacing: 5px;
+    scrollbar: false;
+    background-color: @background-color;
+    padding: 0;
+}
+
+element {
+    background-color: transparent;
+    text-color: @text-color;
+    padding: 8px;
+}
+
+element selected {
+    background-color: transparent;
+    border: 2px;
+    border-color: #FFB454;
+    border-radius: 4px;
+    text-color: #FFB454;
+    padding-left: 30px;
+}
+
+element-text {
+    background-color: inherit;
+    text-color: inherit;
+}
+

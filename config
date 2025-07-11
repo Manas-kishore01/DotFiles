@@ -1,0 +1,47 @@
+# Common Settings
+separator=true
+separator_block_width=15
+markup=pango
+
+
+# Common Settings
+separator=false
+separator_block_width=15
+markup=pango
+
+# CPU Usage Block
+[cpu]
+command=~/.scripts/cpu.sh
+interval=1
+color=#ebdbb2
+
+# Battery Block
+[battery]
+command=~/.scripts/battery.sh
+interval=1
+color=#ebdbb2
+
+# Memory Usage Block
+[memory]
+command=~/.scripts/memory.sh
+interval=1
+color=#ebdbb2
+
+# Volume Block
+[volume]
+command=~/.scripts/volume.sh
+interval=1
+signal=10
+color=#ebdbb2
+
+# Time Block
+[time]
+command=~/.scripts/time.sh
+interval=1
+
+[conserve]
+command=~/.scripts/conservation_mode.sh
+interval=1
+label=BAT
+
+

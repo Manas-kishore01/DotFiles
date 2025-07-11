@@ -1,0 +1,170 @@
+configuration {
+    modes: "drun,run,window";
+    font: "Iosevka Term 10";
+    show-icons: true;
+    icon-theme: "Tela-Dark";
+    drun-display-format: "{icon} {name}";
+    combi-modes: "window,run,drun";
+    matching: "fuzzy";
+    cycle: true;
+    sort: true;
+}
+
+* {
+    spacing: 4;
+    padding: 4px;
+    border: 0;
+    background: #0F1419;
+    foreground: #B3B1AD;
+    border-color: transparent;
+    separatorcolor: #1F2430;
+
+    normal-foreground: #B3B1AD;
+    normal-background: transparent;
+
+    active-foreground: #E6B450;
+    active-background: #1F2430;
+
+    urgent-foreground: #FF3333;
+    urgent-background: #1F2430;
+
+    selected-normal-foreground: #E6B450;
+    selected-normal-background: transparent;
+
+    selected-active-foreground: #FFD580;
+    selected-active-background: #1F2430;
+
+    selected-urgent-foreground: #FF3333;
+    selected-urgent-background: #1F2430;
+
+    /* Disable alternate colors */
+    alternate-normal-background: transparent;
+    alternate-normal-foreground: transparent;
+
+    highlight: underline #FFB454;
+}
+
+window {
+    background-color: #0F1419;
+    border: 0px;
+    border-radius: 8px;
+    padding: 6px 10px;
+    width: 30%;
+}
+
+mainbox {
+    border: 0;
+    padding: 0;
+    orientation: vertical;
+    children: [inputbar, listview];
+}
+
+inputbar {
+    spacing: 6;
+    text-color: #B3B1AD;
+    background-color: #1F2430;
+    border-radius: 6px;
+    padding: 6px 10px;
+    children: [prompt, textbox-prompt-colon, entry, case-indicator];
+}
+
+prompt {
+    text-color: #E6B450;
+}
+
+textbox-prompt-colon {
+    str: ":";
+    text-color: inherit;
+    margin: 0 0.4em 0 0;
+}
+
+entry {
+    text-color: #B3B1AD;
+    background-color: #0F1419;
+    border-radius: 6px;
+    padding: 4px 8px;
+    cursor-width: 1ch;
+}
+
+case-indicator {
+    text-color: #FFB454;
+}
+
+listview {
+    columns: 6;
+    lines: 3;
+    layout: vertical;
+    fixed-columns: true;
+    fixed-height: false;
+    spacing: 6;
+    scrollbar: false;
+    padding: 0 4px;
+    background-color: transparent;
+    border: 0;
+}
+
+element {
+    orientation: vertical;
+    border-radius: 6px;
+    padding: 6px 6px;
+    spacing: 4px;
+    background-color: transparent;
+    text-color: #B3B1AD;
+    border: 0;
+    horizontal-align: 0.5;
+    vertical-align: 0.5;
+}
+
+element normal.normal {
+    background-color: transparent;
+    text-color: #B3B1AD;
+}
+
+element normal.active {
+    background-color: #1F2430;
+    text-color: #E6B450;
+}
+
+element selected.normal {
+    background-color: #1F2430;
+    text-color: #E6B450;
+    border: 2px;
+    border-color: #E6B450;
+}
+
+element selected.active {
+    background-color: #FFD58020;
+    text-color: #FFD580;
+    border: 2px;
+    border-color: #FFD580;
+}
+
+element-icon {
+    size: 28;
+    horizontal-align: 0.5;
+}
+
+element-text {
+    horizontal-align: 0.5;
+    text-color: inherit;
+    font: "Iosevka Term 8";
+    padding: 0;
+    margin: 0;
+}
+
+scrollbar {
+    width: 5px;
+    handle-color: #5C6773;
+    border-radius: 4px;
+}
+
+button {
+    text-color: #B3B1AD;
+    background-color: transparent;
+}
+
+button selected {
+    background-color: #1F2430;
+    text-color: #E6B450;
+}
+
