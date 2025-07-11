@@ -16,7 +16,7 @@ Install the following fonts and packages on your system before applying the conf
 ### Packages
 - i3wm  
 - xfce4  
-- xfsystemd  
+- xsystemd  
 - i3blocks  
 - rofi  
 - kitty  
@@ -31,6 +31,6 @@ Install the following fonts and packages on your system before applying the conf
 
 > ✅ Place **all `.sh` scripts** inside the `.scripts/` folder in home dir.  
 > ✅ Place **all `.png` or `.jpg` wallpapers** inside the `.wallpapers/` folder in home dir.
-
+> ✅ Place .xsettingsd in home dir 
 ---
 
