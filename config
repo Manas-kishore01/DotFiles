@@ -1,3 +1,6 @@
+#main i3 config place it under .config/i3/
+
+
 set $mod Mod4
 set $term kitty
 
