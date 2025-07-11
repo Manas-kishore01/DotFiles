@@ -1,3 +1,6 @@
+#place this in .config/i3blocks/ and rename it as config
+
+
 # Common Settings
 separator=true
 separator_block_width=15
@@ -39,9 +42,11 @@ color=#ebdbb2
 command=~/.scripts/time.sh
 interval=1
 
-[conserve]
-command=~/.scripts/conservation_mode.sh
-interval=1
+
+#this one is my laptop specific(lenovo conservation mode), if your laptop also has conservation mode then uncomment this
+#[conserve]
+#command=~/.scripts/conservation_mode.sh
+#interval=1
 label=BAT
 
 
