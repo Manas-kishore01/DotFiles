@@ -25,6 +25,7 @@ Install the following fonts and packages on your system before applying the conf
 - bluez/blueman
 - networkmanager
 - picom(jonaburg fork)
+- thunar file manager
 ---
 
 
