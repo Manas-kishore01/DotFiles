@@ -24,6 +24,7 @@ Install the following fonts and packages on your system before applying the conf
 - firefox
 - bluez/blueman
 - networkmanager
+- picom(jonaburg fork)
 ---
 
 ## 📁 Folder Structure
